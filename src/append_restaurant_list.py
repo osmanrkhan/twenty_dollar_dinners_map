@@ -112,9 +112,6 @@ def scrape_articles(start_url):
 def new_articles_get_locations(scraped_df, old_list):
     stripped_list = old_list
     stripped_list['Article Link'] = old_list['Article Link'].str.rstrip('/')
-    print(stripped_list['Article Link'])
-    #for index, article in scraped_df.iterrows():
-        #print(article)
 
     list_to_add = stripped_list
     for index, article in scraped_df.iterrows():
@@ -152,8 +149,6 @@ def new_articles_get_locations(scraped_df, old_list):
                     print(f"Failed to geocode address for restaurant in {link}. Response status: {response['status']}")
             else:
                 print("Moving on: \n")
-        else:
-            print(f"Article already processed: {link}")
     return list_to_add
 
 

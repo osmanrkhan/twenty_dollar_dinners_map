@@ -34,11 +34,6 @@
                 margin-top: 20px;
             }
 
-            .landing .disclaimer-message {
-                font-size: 13px;
-                margin-top: 20px;
-                font-style: italic;
-            }
             .landing .feedback {
                 font-size: 16px;
                 margin-top: 20px;
@@ -104,19 +99,16 @@
     <div class="landing">
         <img src="../assets/hellgate.png" alt="HellGate Logo">
         <div class="welcome-message">
-            Welcome to the HellGate $20 Dinner Map! If you're hungry in the five boroughs, this is the map for you.
+            Welcome to the HellGate $20 Dinner Map! Here you'll find all the restaurants mentioned in Scott Lynch's $20 Dinner column.
         </div>
         <div class="feedback">
-            Check out Scott Lynch's <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
+            Send feedback, musings, compliments, and anything else to <a href="mailto:osmanrkhan@gmail.com">osmanrkhan@gmail.com</a>
+        </div>
+        <div class="feedback">
+            Check out the <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
         </div>
         <div class="feedback">
             And if you wish you could read the reviews, <a href="https://hellgatenyc.com/membership/" target="_blank" class="dinner-link">subscribe to HellGate here.</a>
-        </div>
-        <div class="disclaimer-message">
-            This is in no way, shape, or form, affiliated with Hellgate LLC. It was made by a hungry reader. Ignore the logo.
-        </div>
-        <div class="disclaimer-message">
-            Send feedback, musings, compliments, and anything else to my buddy JibJub at <a href="mailto:jaybthornhill@gmail.com ">jaybthornhill@gmail.com</a>
         </div>
         <button class="scroll-button" onclick="scrollToMap()">View Map</button>
     </div>
@@ -364,7 +356,7 @@
                     shadowSize: [41, 41] // size of the shadow
                 })
             }).bindPopup(`
-                <a href="https://hellgatenyc.com/20-dinner-court-street-grocers-guys-save-sacred-sandwich-space-eisenbergs" target="_blank" style="color:#9C3127;">Eisenberg’s</a><br>
+                <a href="https://hellgatenyc.com/20-dinner-court-street-grocers-guys-save-sacred-sandwich-space-eisenbergs" target="_blank" style="color:#9C3127;">S&P</a><br>
                 <a href="https://www.google.com/maps?q=40.7411077,-73.9901838" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
             
@@ -1432,7 +1424,7 @@
                 <a href="https://www.google.com/maps?q=40.767848,-73.9815219" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
             
-            L.marker([40.7502654, -73.6414535], {
+            L.marker([40.810585318933775, -73.92145590207681], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
                     iconSize: [25, 41], // size of the icon
@@ -1443,7 +1435,7 @@
                 })
             }).bindPopup(`
                 <a href="https://hellgatenyc.com/mole-and-mutual-aid-at-the-south-bronx-la-morada" target="_blank" style="color:#9C3127;">La Morada</a><br>
-                <a href="https://www.google.com/maps?q=40.7502654,-73.6414535" target="_blank" style="color:#9e715f;">Open in Maps</a>
+                <a href="https://www.google.com/maps?q=40.810585318933775,-73.92145590207681" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
             
             L.marker([40.7218098, -73.9885376], {
@@ -1540,7 +1532,7 @@
                     shadowSize: [41, 41] // size of the shadow
                 })
             }).bindPopup(`
-                <a href="https://hellgatenyc.com/robertas-slice-joint-rooftop-near-penn-station-2/" target="_blank" style="color:#9C3127;">R Slice</a><br>
+                <a href="https://hellgatenyc.com/robertas-slice-joint-rooftop-near-penn-station-2" target="_blank" style="color:#9C3127;">R Slice</a><br>
                 <a href="https://www.google.com/maps?q=40.7514867,-73.9922855" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
             

@@ -34,6 +34,11 @@
                 margin-top: 20px;
             }
 
+            .landing .disclaimer-message {
+                font-size: 13px;
+                margin-top: 20px;
+                font-style: italic;
+            }
             .landing .feedback {
                 font-size: 16px;
                 margin-top: 20px;
@@ -99,16 +104,19 @@
     <div class="landing">
         <img src="../assets/hellgate.png" alt="HellGate Logo">
         <div class="welcome-message">
-            Welcome to the HellGate $20 Dinner Map! Here you'll find all the restaurants mentioned in Scott Lynch's $20 Dinner column.
+            Welcome to the HellGate $20 Dinner Map! If you're hungry in the five boroughs, this is the map for you.
         </div>
         <div class="feedback">
-            Send feedback, musings, compliments, and anything else to <a href="mailto:osmanrkhan@gmail.com">osmanrkhan@gmail.com</a>
-        </div>
-        <div class="feedback">
-            Check out the <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
+            Check out Scott Lynch's <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
         </div>
         <div class="feedback">
             And if you wish you could read the reviews, <a href="https://hellgatenyc.com/membership/" target="_blank" class="dinner-link">subscribe to HellGate here.</a>
+        </div>
+        <div class="disclaimer-message">
+            This is in no way, shape, or form, affiliated with Hellgate LLC. It was made by a hungry reader. Ignore the logo.
+        </div>
+        <div class="disclaimer-message">
+            Send feedback, musings, compliments, and anything else to my buddy JibJub at <a href="mailto:jaybthornhill@gmail.com ">jaybthornhill@gmail.com</a>
         </div>
         <button class="scroll-button" onclick="scrollToMap()">View Map</button>
     </div>
@@ -135,7 +143,7 @@
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
 
-            
+
             L.marker([40.7608856, -73.9825548], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -149,7 +157,7 @@
                 <a href="https://hellgatenyc.com/20-dollar-dinner-urban-hawker-market" target="_blank" style="color:#9C3127;">Urban Hawker</a><br>
                 <a href="https://www.google.com/maps?q=40.7608856,-73.9825548" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7463337, -73.9000145], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -163,7 +171,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-filipino-favorite-dollar-hits-brings-the-skewer-party-to-woodside" target="_blank" style="color:#9C3127;">Dollar Hits</a><br>
                 <a href="https://www.google.com/maps?q=40.7463337,-73.9000145" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7657643, -73.9831962], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -177,7 +185,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-daves-hot-chicken-seriously-good-bird" target="_blank" style="color:#9C3127;">Dave's Hot Chicken</a><br>
                 <a href="https://www.google.com/maps?q=40.7657643,-73.9831962" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6982505, -73.9226004], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -191,7 +199,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-terrific-tacos-tortas-and-gringas-at-bushwicks-plaza-ortega" target="_blank" style="color:#9C3127;">Plaza Ortega</a><br>
                 <a href="https://www.google.com/maps?q=40.6982505,-73.9226004" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7080299983627, -73.8032177344877], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -205,7 +213,7 @@
                 <a href="https://hellgatenyc.com/unforgettable-bangladeshi-fuchka-at-tong" target="_blank" style="color:#9C3127;">Tong Bangladeshi Street Food</a><br>
                 <a href="https://www.google.com/maps?q=40.7080299983627,-73.8032177344877" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7520634, -73.921463], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -219,7 +227,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-rokstar-chicken" target="_blank" style="color:#9C3127;">Rokstar Chicken</a><br>
                 <a href="https://www.google.com/maps?q=40.7520634,-73.921463" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.83185, -73.9183004], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -233,7 +241,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-papaye-the-bronx" target="_blank" style="color:#9C3127;">Papaye</a><br>
                 <a href="https://www.google.com/maps?q=40.83185,-73.9183004" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.8574024882181, -73.8995469345902], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -247,7 +255,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-papaye-the-bronx" target="_blank" style="color:#9C3127;">Papaye</a><br>
                 <a href="https://www.google.com/maps?q=40.8574024882181,-73.8995469345902" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7000787, -73.9295484], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -261,7 +269,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-gunthers-soup-queen-farewell-bushwick" target="_blank" style="color:#9C3127;">Native Bread</a><br>
                 <a href="https://www.google.com/maps?q=40.7000787,-73.9295484" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6840037, -73.9925388], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -275,7 +283,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-bobbis-italian-beef" target="_blank" style="color:#9C3127;">Mazzola Bakery</a><br>
                 <a href="https://www.google.com/maps?q=40.6840037,-73.9925388" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7516571, -74.0071579], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -289,7 +297,7 @@
                 <a href="https://hellgatenyc.com/20-dollar-dinner-olly-olly" target="_blank" style="color:#9C3127;">Olly Olly</a><br>
                 <a href="https://www.google.com/maps?q=40.7516571,-74.0071579" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7184773, -73.994292], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -303,7 +311,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-nycs-best-new-burger-is-in-chinatown" target="_blank" style="color:#9C3127;">Burger By Day</a><br>
                 <a href="https://www.google.com/maps?q=40.7184773,-73.994292" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6907244, -73.9832855], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -317,7 +325,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-babys-buns-buckets" target="_blank" style="color:#9C3127;">Baby’s Buns and Buckets</a><br>
                 <a href="https://www.google.com/maps?q=40.6907244,-73.9832855" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7580556485087, -73.8605095645337], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -331,7 +339,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-everytable" target="_blank" style="color:#9C3127;">Everytable</a><br>
                 <a href="https://www.google.com/maps?q=40.7580556485087,-73.8605095645337" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7600349999926, -73.8273356576817], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -345,7 +353,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-gorgeous-fiery-stews-at-flushings-fish-with-you" target="_blank" style="color:#9C3127;">Flushing’s Fiery Spicy Pot</a><br>
                 <a href="https://www.google.com/maps?q=40.7600349999926,-73.8273356576817" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7411077, -73.9901838], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -356,10 +364,10 @@
                     shadowSize: [41, 41] // size of the shadow
                 })
             }).bindPopup(`
-                <a href="https://hellgatenyc.com/20-dinner-court-street-grocers-guys-save-sacred-sandwich-space-eisenbergs" target="_blank" style="color:#9C3127;">S&P</a><br>
+                <a href="https://hellgatenyc.com/20-dinner-court-street-grocers-guys-save-sacred-sandwich-space-eisenbergs" target="_blank" style="color:#9C3127;">Eisenberg’s</a><br>
                 <a href="https://www.google.com/maps?q=40.7411077,-73.9901838" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7278642, -73.9794103], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -373,7 +381,7 @@
                 <a href="https://hellgatenyc.com/the-york-burgers" target="_blank" style="color:#9C3127;">The York</a><br>
                 <a href="https://www.google.com/maps?q=40.7278642,-73.9794103" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7032244, -73.9111673], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -387,7 +395,7 @@
                 <a href="https://hellgatenyc.com/chicken-katsu-at-yoshi-mini-mart-ridgewood" target="_blank" style="color:#9C3127;">Mama Yoshi Mini Mart</a><br>
                 <a href="https://www.google.com/maps?q=40.7032244,-73.9111673" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7475652, -73.9026985], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -401,7 +409,7 @@
                 <a href="https://hellgatenyc.com/zhego-fantastic-bhutanese-feast-woodside-queens" target="_blank" style="color:#9C3127;">Zhego</a><br>
                 <a href="https://www.google.com/maps?q=40.7475652,-73.9026985" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7321508, -74.0009771], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -415,7 +423,7 @@
                 <a href="https://hellgatenyc.com/balkan-street-food-balkan-streat" target="_blank" style="color:#9C3127;">Balkan Streat</a><br>
                 <a href="https://www.google.com/maps?q=40.7321508,-74.0009771" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7042332, -73.9104028], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -429,7 +437,7 @@
                 <a href="https://hellgatenyc.com/gloriously-gooey-slices-and-great-vibes-at-velma-in-ridgewood" target="_blank" style="color:#9C3127;">Velma</a><br>
                 <a href="https://www.google.com/maps?q=40.7042332,-73.9104028" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7325286, -74.0016758], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -443,7 +451,7 @@
                 <a href="https://hellgatenyc.com/lin-and-daughters-west-village" target="_blank" style="color:#9C3127;">Lin & Daughters</a><br>
                 <a href="https://www.google.com/maps?q=40.7325286,-74.0016758" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6418927, -74.0025413], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -457,7 +465,7 @@
                 <a href="https://hellgatenyc.com/hainan-chicken-house-in-sunset-park" target="_blank" style="color:#9C3127;">Hainan Chicken</a><br>
                 <a href="https://www.google.com/maps?q=40.6418927,-74.0025413" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6799097, -73.942727], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -471,7 +479,7 @@
                 <a href="https://hellgatenyc.com/new-bed-stuy-bar-boasts-beautiful-burger" target="_blank" style="color:#9C3127;">Three Maples</a><br>
                 <a href="https://www.google.com/maps?q=40.6799097,-73.942727" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6912119, -73.9907069], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -485,7 +493,7 @@
                 <a href="https://hellgatenyc.com/next-stop-vegan-brings-next-level-plant-based-dominican-food-to-downtown-brooklyn" target="_blank" style="color:#9C3127;">Slutty Vegan</a><br>
                 <a href="https://www.google.com/maps?q=40.6912119,-73.9907069" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7191119859049, -74.0008703461691], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -499,7 +507,7 @@
                 <a href="https://hellgatenyc.com/20-dinner-mucho-sarap-canal-street" target="_blank" style="color:#9C3127;">Mucho Sarap</a><br>
                 <a href="https://www.google.com/maps?q=40.7191119859049,-74.0008703461691" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.5850899, -73.8177715], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -513,7 +521,7 @@
                 <a href="https://hellgatenyc.com/nigerian-delights-the-cradle-rockaway-beach" target="_blank" style="color:#9C3127;">The Cradle</a><br>
                 <a href="https://www.google.com/maps?q=40.5850899,-73.8177715" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7145739, -73.9980045], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -527,7 +535,7 @@
                 <a href="https://hellgatenyc.com/nycs-hottest-club-mabu-cafe-doyers" target="_blank" style="color:#9C3127;">Mabu Cafe</a><br>
                 <a href="https://www.google.com/maps?q=40.7145739,-73.9980045" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7277625, -73.9572458], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -541,7 +549,7 @@
                 <a href="https://hellgatenyc.com/taqueria-ramirez-al-pastor-burger" target="_blank" style="color:#9C3127;">Ramirez Burger</a><br>
                 <a href="https://www.google.com/maps?q=40.7277625,-73.9572458" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7429514723793, -74.0091560151252], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -555,7 +563,7 @@
                 <a href="https://hellgatenyc.com/pier-57-food-hall-review" target="_blank" style="color:#9C3127;">Pier 57</a><br>
                 <a href="https://www.google.com/maps?q=40.7429514723793,-74.0091560151252" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.5748665, -73.9803514], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -569,7 +577,7 @@
                 <a href="https://hellgatenyc.com/nycs-best-cemitas-coney-island" target="_blank" style="color:#9C3127;">Doña Zita</a><br>
                 <a href="https://www.google.com/maps?q=40.5748665,-73.9803514" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7600032, -73.8309068], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -583,7 +591,7 @@
                 <a href="https://hellgatenyc.com/flushing-cold-noodle-mall-stall-favorite-old-luo-yang-gets-its-own-storefront" target="_blank" style="color:#9C3127;">Old Lanzhou</a><br>
                 <a href="https://www.google.com/maps?q=40.7600032,-73.8309068" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7264835, -73.9835089], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -597,7 +605,7 @@
                 <a href="https://hellgatenyc.com/superiority-burger-lives-up-to-high-expectations" target="_blank" style="color:#9C3127;">Superiority Burger</a><br>
                 <a href="https://www.google.com/maps?q=40.7264835,-73.9835089" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7171407, -73.9405452], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -611,7 +619,7 @@
                 <a href="https://hellgatenyc.com/if-you-want-a-taste-of-heaven-you-must-go-to-east-williamsburg" target="_blank" style="color:#9C3127;">Evelia’s</a><br>
                 <a href="https://www.google.com/maps?q=40.7171407,-73.9405452" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6764452, -73.9501033], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -625,7 +633,7 @@
                 <a href="https://hellgatenyc.com/nigerian-street-food-akara-house" target="_blank" style="color:#9C3127;">Grub Street</a><br>
                 <a href="https://www.google.com/maps?q=40.6764452,-73.9501033" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7219264, -73.9580961], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -639,7 +647,7 @@
                 <a href="https://hellgatenyc.com/big-wong-hits-williamsburg" target="_blank" style="color:#9C3127;">Big Wong</a><br>
                 <a href="https://www.google.com/maps?q=40.7219264,-73.9580961" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7603697, -73.9909505], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -653,7 +661,7 @@
                 <a href="https://hellgatenyc.com/lovelys-old-fashioned-burger-fries-hells-kitchen" target="_blank" style="color:#9C3127;">Lovely’s Old Fashioned</a><br>
                 <a href="https://www.google.com/maps?q=40.7603697,-73.9909505" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.752602, -73.9392897], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -667,7 +675,7 @@
                 <a href="https://hellgatenyc.com/long-island-city-instant-noodle-factory" target="_blank" style="color:#9C3127;">Instant Noodle Factory</a><br>
                 <a href="https://www.google.com/maps?q=40.752602,-73.9392897" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7619008, -73.9176063], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -681,7 +689,7 @@
                 <a href="https://hellgatenyc.com/astorias-popular-takeout-spot-foodstruck-finally-reopens-as-a-sit-down-restaurant" target="_blank" style="color:#9C3127;">FoodStruck</a><br>
                 <a href="https://www.google.com/maps?q=40.7619008,-73.9176063" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6769277, -73.9860938], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -695,7 +703,7 @@
                 <a href="https://hellgatenyc.com/killer-puerto-rican-food-at-kiosko-787-gowanus" target="_blank" style="color:#9C3127;">The Sazon Experience</a><br>
                 <a href="https://www.google.com/maps?q=40.6769277,-73.9860938" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7288145822735, -73.9882265378962], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -709,7 +717,7 @@
                 <a href="https://hellgatenyc.com/funzis-pizzeria-brings-excellent-slices-to-st-marks-place" target="_blank" style="color:#9C3127;">Manhattan Special</a><br>
                 <a href="https://www.google.com/maps?q=40.7288145822735,-73.9882265378962" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7504577, -73.9482385], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -723,7 +731,7 @@
                 <a href="https://hellgatenyc.com/hunan-slurp-sofun-long-island-city" target="_blank" style="color:#9C3127;">Sofun Kitchen</a><br>
                 <a href="https://www.google.com/maps?q=40.7504577,-73.9482385" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7067463, -73.9086148], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -737,7 +745,7 @@
                 <a href="https://hellgatenyc.com/salty-lunch-lady-dria-atencio-killer-sandwiches-cakes-ridgewood" target="_blank" style="color:#9C3127;">Dria Atencio’s Food Truck</a><br>
                 <a href="https://www.google.com/maps?q=40.7067463,-73.9086148" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7156185, -73.9649307], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -751,7 +759,7 @@
                 <a href="https://hellgatenyc.com/mama-lee-taiwanese-williamsburg" target="_blank" style="color:#9C3127;">Mama Lee</a><br>
                 <a href="https://www.google.com/maps?q=40.7156185,-73.9649307" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7026008, -73.933617], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -765,7 +773,7 @@
                 <a href="https://hellgatenyc.com/chiang-mai-fantastic-thai-bushwick" target="_blank" style="color:#9C3127;">Lamoon</a><br>
                 <a href="https://www.google.com/maps?q=40.7026008,-73.933617" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6834523, -74.0028297], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -779,7 +787,7 @@
                 <a href="https://hellgatenyc.com/wildly-delicious-worker-owned-brooklyns-new-sandwich-shop-sea-and-soil" target="_blank" style="color:#9C3127;">Sea & Soil</a><br>
                 <a href="https://www.google.com/maps?q=40.6834523,-74.0028297" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7420136, -73.9252478], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -793,7 +801,7 @@
                 <a href="https://hellgatenyc.com/spicy-nepal-sunnyside-review" target="_blank" style="color:#9C3127;">Spicy Nepal</a><br>
                 <a href="https://www.google.com/maps?q=40.7420136,-73.9252478" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7306938, -73.9915383], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -807,7 +815,7 @@
                 <a href="https://hellgatenyc.com/wegmans-astor-place-prepared-food-awful" target="_blank" style="color:#9C3127;">Wegmaniacs</a><br>
                 <a href="https://www.google.com/maps?q=40.7306938,-73.9915383" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.8705144657982, -73.9156902391263], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -821,7 +829,7 @@
                 <a href="https://hellgatenyc.com/patok-by-rach-in-inwood-review" target="_blank" style="color:#9C3127;">Patok by Rach</a><br>
                 <a href="https://www.google.com/maps?q=40.8705144657982,-73.9156902391263" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6813472, -73.9112416], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -835,7 +843,7 @@
                 <a href="https://hellgatenyc.com/bakery-bread-and-butter-bed-stuy-review" target="_blank" style="color:#9C3127;">Bread and Butter</a><br>
                 <a href="https://www.google.com/maps?q=40.6813472,-73.9112416" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7189233449358, -73.9852736633213], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -849,7 +857,7 @@
                 <a href="https://hellgatenyc.com/cloud-vietnamese-lower-east-side-clinton-street" target="_blank" style="color:#9C3127;">Cloud Vietnamese Comfort Food</a><br>
                 <a href="https://www.google.com/maps?q=40.7189233449358,-73.9852736633213" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7278519754624, -73.9826895213889], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -863,7 +871,7 @@
                 <a href="https://hellgatenyc.com/el-primo-brings-top-notch-birria-delights-tacos-nyc" target="_blank" style="color:#9C3127;">El Primo</a><br>
                 <a href="https://www.google.com/maps?q=40.7278519754624,-73.9826895213889" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7458825, -73.8900237], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -877,7 +885,7 @@
                 <a href="https://hellgatenyc.com/taste-of-himalaya-elmhurst-queens-so-good" target="_blank" style="color:#9C3127;">Taste of Himalaya</a><br>
                 <a href="https://www.google.com/maps?q=40.7458825,-73.8900237" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7302341, -73.9940323], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -891,7 +899,7 @@
                 <a href="https://hellgatenyc.com/smorgasburg-favorite-duck-season-review" target="_blank" style="color:#9C3127;">Duck Season</a><br>
                 <a href="https://www.google.com/maps?q=40.7302341,-73.9940323" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7718429, -73.9527208], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -905,7 +913,7 @@
                 <a href="https://hellgatenyc.com/super-taste-upper-east-side" target="_blank" style="color:#9C3127;">Super Taste</a><br>
                 <a href="https://www.google.com/maps?q=40.7718429,-73.9527208" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7321753, -73.9883101], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -919,7 +927,7 @@
                 <a href="https://hellgatenyc.com/tacombi-yellow-rose-taco-showdown-east-village-nyc" target="_blank" style="color:#9C3127;">Tacombi</a><br>
                 <a href="https://www.google.com/maps?q=40.7321753,-73.9883101" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7325423441224, -73.9880687681341], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -933,7 +941,7 @@
                 <a href="https://hellgatenyc.com/tacombi-yellow-rose-taco-showdown-east-village-nyc" target="_blank" style="color:#9C3127;">Yellow Rose</a><br>
                 <a href="https://www.google.com/maps?q=40.7325423441224,-73.9880687681341" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7054607, -73.9099268], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -947,7 +955,7 @@
                 <a href="https://hellgatenyc.com/abracadabra-magic-diner-ridgewood-review" target="_blank" style="color:#9C3127;">Abracadabra Magic Diner</a><br>
                 <a href="https://www.google.com/maps?q=40.7054607,-73.9099268" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7291069, -74.001523], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -961,7 +969,7 @@
                 <a href="https://hellgatenyc.com/cauldron-chicken-dao-kou-shou-ji-bleecker-street-nyc" target="_blank" style="color:#9C3127;">Cauldron Chicken</a><br>
                 <a href="https://www.google.com/maps?q=40.7291069,-74.001523" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7509137, -73.9370599], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -975,7 +983,7 @@
                 <a href="https://hellgatenyc.com/dutch-kills-fer-sichuan-restaurant-review" target="_blank" style="color:#9C3127;">Fer</a><br>
                 <a href="https://www.google.com/maps?q=40.7509137,-73.9370599" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7283022, -73.9837211], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -989,7 +997,7 @@
                 <a href="https://hellgatenyc.com/el-rinconcito-alphabet-city-review" target="_blank" style="color:#9C3127;">El Rinconcito</a><br>
                 <a href="https://www.google.com/maps?q=40.7283022,-73.9837211" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7298638, -73.9596512], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1003,7 +1011,7 @@
                 <a href="https://hellgatenyc.com/taku-sando-japanese-greenpoint-nyc" target="_blank" style="color:#9C3127;">Radio Star</a><br>
                 <a href="https://www.google.com/maps?q=40.7298638,-73.9596512" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7279106, -74.0024025], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1017,7 +1025,7 @@
                 <a href="https://hellgatenyc.com/hamburger-america-george-motz-soho-nyc" target="_blank" style="color:#9C3127;">Hamburger America</a><br>
                 <a href="https://www.google.com/maps?q=40.7279106,-74.0024025" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7643836, -73.9876243], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1031,7 +1039,7 @@
                 <a href="https://hellgatenyc.com/hyderabadi-zaiqa-hells-kitchen-best-biryani" target="_blank" style="color:#9C3127;">Hyderabadi Zaiqa</a><br>
                 <a href="https://www.google.com/maps?q=40.7643836,-73.9876243" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6920119, -73.9429046], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1045,7 +1053,7 @@
                 <a href="https://hellgatenyc.com/sonbul-korean-food-burly-bed-stuy" target="_blank" style="color:#9C3127;">Homestyle Korean Food</a><br>
                 <a href="https://www.google.com/maps?q=40.6920119,-73.9429046" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7332224, -74.0049081], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1059,7 +1067,7 @@
                 <a href="https://hellgatenyc.com/lindustrie-sushi-counter-christopher-street-review" target="_blank" style="color:#9C3127;">Sushi Counter</a><br>
                 <a href="https://www.google.com/maps?q=40.7332224,-74.0049081" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7332224, -74.0049081], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1073,7 +1081,7 @@
                 <a href="https://hellgatenyc.com/lindustrie-sushi-counter-christopher-street-review" target="_blank" style="color:#9C3127;">Sushi Counter</a><br>
                 <a href="https://www.google.com/maps?q=40.7332224,-74.0049081" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7332891, -74.0040441], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1087,7 +1095,7 @@
                 <a href="https://hellgatenyc.com/mamas-too-frank-tuttolomondo-west-village-pizza-nyc-review" target="_blank" style="color:#9C3127;">Mama's Too West Village</a><br>
                 <a href="https://www.google.com/maps?q=40.7332891,-74.0040441" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7433137, -73.8259106], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1101,7 +1109,7 @@
                 <a href="https://hellgatenyc.com/best-wontons-nyc-maxis-noodle-2-flushing-review" target="_blank" style="color:#9C3127;">Maxi Lau</a><br>
                 <a href="https://www.google.com/maps?q=40.7433137,-73.8259106" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7143761480397, -73.990988107691], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1115,7 +1123,7 @@
                 <a href="https://hellgatenyc.com/sen-saigon-vegan-vietnamese-east-broadway-chinatown-nyc" target="_blank" style="color:#9C3127;">Sen Saigon</a><br>
                 <a href="https://www.google.com/maps?q=40.7143761480397,-73.990988107691" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6521242, -73.9408156], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1129,7 +1137,7 @@
                 <a href="https://hellgatenyc.com/incredible-homestyle-jamaican-food-yaadman-thing-flatbush-review" target="_blank" style="color:#9C3127;">Yaadman Thing</a><br>
                 <a href="https://www.google.com/maps?q=40.6521242,-73.9408156" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7994092, -73.9624171], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1143,7 +1151,7 @@
                 <a href="https://hellgatenyc.com/a-love-letter-to-doaba-deli-a-homey-community-hub" target="_blank" style="color:#9C3127;">Punjabi Deli</a><br>
                 <a href="https://www.google.com/maps?q=40.7994092,-73.9624171" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7275350469347, -73.9852568664757], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1157,7 +1165,7 @@
                 <a href="https://hellgatenyc.com/hen-house-and-kolachi-on-one-east-village-block" target="_blank" style="color:#9C3127;">Kolachi</a><br>
                 <a href="https://www.google.com/maps?q=40.7275350469347,-73.9852568664757" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7271785230851, -73.985395878841], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1171,7 +1179,7 @@
                 <a href="https://hellgatenyc.com/hen-house-and-kolachi-on-one-east-village-block" target="_blank" style="color:#9C3127;">Hen House</a><br>
                 <a href="https://www.google.com/maps?q=40.7271785230851,-73.985395878841" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7005387, -73.9258218], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1185,7 +1193,7 @@
                 <a href="https://hellgatenyc.com/bushwick-nyc-lori-jayne-alphaville-comfort-food" target="_blank" style="color:#9C3127;">Righteous Eats</a><br>
                 <a href="https://www.google.com/maps?q=40.7005387,-73.9258218" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7341789, -73.955158], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1199,7 +1207,7 @@
                 <a href="https://hellgatenyc.com/greenpoint-new-little-armenia-cafe" target="_blank" style="color:#9C3127;">Little Armenia</a><br>
                 <a href="https://www.google.com/maps?q=40.7341789,-73.955158" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7214043, -74.0043748], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1213,7 +1221,7 @@
                 <a href="https://hellgatenyc.com/pizza-party-on-canal-street-with-lucia-and-ltd" target="_blank" style="color:#9C3127;">Lucia Pizza</a><br>
                 <a href="https://www.google.com/maps?q=40.7214043,-74.0043748" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7242923520737, -74.0080820702668], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1227,7 +1235,7 @@
                 <a href="https://hellgatenyc.com/pizza-party-on-canal-street-with-lucia-and-ltd" target="_blank" style="color:#9C3127;">LTD Bar</a><br>
                 <a href="https://www.google.com/maps?q=40.7242923520737,-74.0080820702668" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7145924448806, -73.9982335928011], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1241,7 +1249,7 @@
                 <a href="https://hellgatenyc.com/doyers-street-malaysian-doyers-old-town-review" target="_blank" style="color:#9C3127;">Doyers Old Town</a><br>
                 <a href="https://www.google.com/maps?q=40.7145924448806,-73.9982335928011" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.5813475, -73.829771], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1255,7 +1263,7 @@
                 <a href="https://hellgatenyc.com/rockaway-beach-food-guide-2024" target="_blank" style="color:#9C3127;">Boardwalk Bagel</a><br>
                 <a href="https://www.google.com/maps?q=40.5813475,-73.829771" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6947828, -73.9332898], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1269,7 +1277,7 @@
                 <a href="https://hellgatenyc.com/falansai-me-tay-co-hart-bar-bushwick" target="_blank" style="color:#9C3127;">Me Tay Co</a><br>
                 <a href="https://www.google.com/maps?q=40.6947828,-73.9332898" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7164567, -73.9590186], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1283,7 +1291,7 @@
                 <a href="https://hellgatenyc.com/esse-tacos-williamsburg" target="_blank" style="color:#9C3127;">Esse Taco</a><br>
                 <a href="https://www.google.com/maps?q=40.7164567,-73.9590186" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7504739, -73.9702846], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1297,7 +1305,7 @@
                 <a href="https://hellgatenyc.com/burmese-bites-midtown-nyc-review" target="_blank" style="color:#9C3127;">Burmese Bites</a><br>
                 <a href="https://www.google.com/maps?q=40.7504739,-73.9702846" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7390461, -74.0035504], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1311,7 +1319,7 @@
                 <a href="https://hellgatenyc.com/burgerhead-smacking-burger-west-village-nyc-review" target="_blank" style="color:#9C3127;">Smacking Burger</a><br>
                 <a href="https://www.google.com/maps?q=40.7390461,-74.0035504" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7665376, -73.9125684], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1325,7 +1333,7 @@
                 <a href="https://hellgatenyc.com/queens-night-market-palestinian-food-astoria" target="_blank" style="color:#9C3127;">Grub Street</a><br>
                 <a href="https://www.google.com/maps?q=40.7665376,-73.9125684" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7166726, -73.9996701], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1339,7 +1347,7 @@
                 <a href="https://hellgatenyc.com/el-sazon-superb-dominican-smashburgers-perfect-pernil-chinatown-nyc-review" target="_blank" style="color:#9C3127;">El Sazon</a><br>
                 <a href="https://www.google.com/maps?q=40.7166726,-73.9996701" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7215313, -73.9424809], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1353,7 +1361,7 @@
                 <a href="https://hellgatenyc.com/jjs-southern-vegan-the-drift-greenpoint-nyc-review" target="_blank" style="color:#9C3127;">Suffocating Madness</a><br>
                 <a href="https://www.google.com/maps?q=40.7215313,-73.9424809" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7564124, -73.8458937], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1367,7 +1375,7 @@
                 <a href="https://hellgatenyc.com/food-mets-citi-field-2024-review" target="_blank" style="color:#9C3127;">Citi Field Food Vendors</a><br>
                 <a href="https://www.google.com/maps?q=40.7564124,-73.8458937" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7437961, -73.9212204], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1381,7 +1389,7 @@
                 <a href="https://hellgatenyc.com/newa-chhe-kathmandu-valley-nepali-sunnyside-queens-review" target="_blank" style="color:#9C3127;">Newa Chhe</a><br>
                 <a href="https://www.google.com/maps?q=40.7437961,-73.9212204" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7264239, -73.994992], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1395,7 +1403,7 @@
                 <a href="https://hellgatenyc.com/thisbowl-noho-bondi-lunch-review" target="_blank" style="color:#9C3127;">ThisBowl</a><br>
                 <a href="https://www.google.com/maps?q=40.7264239,-73.994992" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.671156, -73.9843551], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1409,7 +1417,7 @@
                 <a href="https://hellgatenyc.com/curry-mee-park-slope" target="_blank" style="color:#9C3127;">Curry Mee</a><br>
                 <a href="https://www.google.com/maps?q=40.671156,-73.9843551" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.767848, -73.9815219], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1423,8 +1431,8 @@
                 <a href="https://hellgatenyc.com/emeye-ethiopian-cuisine-injera-yum-nyc" target="_blank" style="color:#9C3127;">Emeye Ethiopian</a><br>
                 <a href="https://www.google.com/maps?q=40.767848,-73.9815219" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
-            L.marker([40.8105848881796, -73.92142570880287], {
+
+            L.marker([40.7502654, -73.6414535], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
                     iconSize: [25, 41], // size of the icon
@@ -1437,7 +1445,7 @@
                 <a href="https://hellgatenyc.com/mole-and-mutual-aid-at-the-south-bronx-la-morada" target="_blank" style="color:#9C3127;">La Morada</a><br>
                 <a href="https://www.google.com/maps?q=40.8105848881796,-73.92142570880287" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7218098, -73.9885376], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1451,7 +1459,7 @@
                 <a href="https://hellgatenyc.com/son-del-north-burritos-les-nyc-review" target="_blank" style="color:#9C3127;">Son Del North</a><br>
                 <a href="https://www.google.com/maps?q=40.7218098,-73.9885376" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7244244, -73.9544269], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1465,7 +1473,7 @@
                 <a href="https://hellgatenyc.com/falu-house-scandinavian-deli-greenpoint-review" target="_blank" style="color:#9C3127;">Falu House</a><br>
                 <a href="https://www.google.com/maps?q=40.7244244,-73.9544269" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7292861, -74.0008468], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1479,7 +1487,7 @@
                 <a href="https://hellgatenyc.com/chloe-coscarelli-vegan-west-village-review" target="_blank" style="color:#9C3127;">Chloe</a><br>
                 <a href="https://www.google.com/maps?q=40.7292861,-74.0008468" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7195109, -73.9562017], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1493,7 +1501,7 @@
                 <a href="https://hellgatenyc.com/moonburger-lands-in-williamsburg" target="_blank" style="color:#9C3127;">Moonburger</a><br>
                 <a href="https://www.google.com/maps?q=40.7195109,-73.9562017" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.6993718, -73.9143735], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1507,7 +1515,7 @@
                 <a href="https://hellgatenyc.com/blue-hour-halal-gas-station-review-bushwick" target="_blank" style="color:#9C3127;">Blue Hour</a><br>
                 <a href="https://www.google.com/maps?q=40.6993718,-73.9143735" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7224688, -73.9827999], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1521,7 +1529,7 @@
                 <a href="https://hellgatenyc.com/carnitas-ramirez-nyc-alphabet-city-review" target="_blank" style="color:#9C3127;">Carnitas Ramirez</a><br>
                 <a href="https://www.google.com/maps?q=40.7224688,-73.9827999" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
-            
+
             L.marker([40.7514867, -73.9922855], {
                 icon: L.icon({
                     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -1532,7 +1540,7 @@
                     shadowSize: [41, 41] // size of the shadow
                 })
             }).bindPopup(`
-                <a href="https://hellgatenyc.com/robertas-slice-joint-rooftop-near-penn-station-2" target="_blank" style="color:#9C3127;">R Slice</a><br>
+                <a href="https://hellgatenyc.com/robertas-slice-joint-rooftop-near-penn-station-2/" target="_blank" style="color:#9C3127;">R Slice</a><br>
                 <a href="https://www.google.com/maps?q=40.7514867,-73.9922855" target="_blank" style="color:#9e715f;">Open in Maps</a>
             `).addTo(map);
             

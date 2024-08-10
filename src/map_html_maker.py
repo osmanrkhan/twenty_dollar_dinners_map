@@ -66,7 +66,13 @@ def generate_html(marker_js, output_html="../html/dinner_map.html"):
                 font-size: 16px;
                 margin-top: 20px;
             }}
-
+            
+            .landing .disclaimer-message {{
+                font-size: 13px;
+                margin-top: 15px;
+                font-style: italic;
+            }}
+            
             .landing a {{
                 color: #FFFFFF;
                 text-decoration: none;

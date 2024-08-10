@@ -148,7 +148,7 @@ def generate_html(marker_js, output_html="../html/dinner_map.html"):
             Unfortunately, AI was used to grab the addresses. There may be errors.
         </div>
         <div class="disclaimer-message">
-             Enter feedback, musings, compliments, and AI/human errors  at this <a href="https://9cudo6covtz.typeform.com/to/PxZCI52S ">form</a>
+             Enter feedback, musings, compliments, and AI/human errors  at this <a href="https://9cudo6covtz.typeform.com/to/PxZCI52S" target="_blank" class="dinner-link">form</a>
         </div>
         <button class="scroll-button" onclick="scrollToMap()">View Map</button>
     </div>

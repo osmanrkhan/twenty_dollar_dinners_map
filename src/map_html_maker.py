@@ -127,20 +127,22 @@ def generate_html(marker_js, output_html="../html/dinner_map.html"):
     <div class="landing">
         <img src="../assets/hellgate.png" alt="HellGate Logo">
         <div class="welcome-message">
-            Welcome to the HellGate $20 Dinner Map! Here you'll find all the restaurants mentioned in Scott Lynch's $20 Dinner column.
+            Welcome to the HellGate $20 Dinner Map! If you're hungry in the five boroughs, this is the map for you.
         </div>
         <div class="feedback">
-            Send feedback, musings, compliments, and anything else to <a href="mailto:osmanrkhan@gmail.com">osmanrkhan@gmail.com</a>
-        </div>
-        <div class="feedback">
-            Check out the <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
+            Check out Scott Lynch's <a href="https://hellgatenyc.com/category/20-dinner" target="_blank" class="dinner-link">$20 Dinner column</a> for more!
         </div>
         <div class="feedback">
             And if you wish you could read the reviews, <a href="https://hellgatenyc.com/membership/" target="_blank" class="dinner-link">subscribe to HellGate here.</a>
         </div>
+        <div class="disclaimer-message">
+            This is in no way, shape, or form, affiliated with Hellgate LLC. It was made by a hungry reader. Ignore the logo.
+        </div>
+        <div class="disclaimer-message">
+            Send feedback, musings, compliments, and anything else to my buddy JibJub at <a href="mailto:jaybthornhill@gmail.com ">jaybthornhill@gmail.com</a>
+        </div>
         <button class="scroll-button" onclick="scrollToMap()">View Map</button>
     </div>
-
     <div class="map-container" id="map-container">
         <div id="map"></div>
         <button class="back-button" onclick="scrollToTop()">Back</button>

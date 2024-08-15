@@ -117,38 +117,45 @@ def new_articles_get_locations(scraped_df, old_list):
     for index, article in scraped_df.iterrows():
         link = article['Article Link'].rstrip('/')
         if link.rstrip('/') not in stripped_list['Article Link'].tolist() and link.rstrip('/') not in list_to_add['Article Link']:
-            rest_name = input(f"What's the name of the restaurant contained in the link: {link}? Enter nothing if not a restaurant. \n")
-            if rest_name:
-                raw_address = input(
-                    f"Using the format, 456 8th Avenue, Manhattan enter the address for {rest_name}, please:\n")
-                socials_website = input(
-                    f"Optional: Enter the social media or website for {rest_name} (leave blank if none):\n") or ""
+            article_counter = 0
+            how_many_articles = int(input(f"How many restaurants need to be added from this link? {link}? \n"))
+            if how_many_articles == "" or how_many_articles.lower() == "none":
+                how_many_articles = 0
+            while how_many_articles > article_counter :
+                article_counter += 1
+                rest_name = input(f"What's the name of restaurant #{article_counter} contained in the link: {link}? Enter nothing if there's none.\n")
+                if how_many_articles != 0 and how_many_articles:
+                    raw_address = input(
+                        f"Using the format, 456 8th Avenue, Manhattan enter the address for {rest_name}, please:\n")
+                    socials_website = input(
+                        f"Optional: Enter the social media or website for {rest_name} (leave blank if none):\n") or ""
 
-                formatted_address = raw_address.replace(' ', '+')
-                google_maps_address = formatted_address.replace(',', '%2C')
+                    formatted_address = raw_address.replace(' ', '+')
+                    google_maps_address = formatted_address.replace(',', '%2C')
 
-                article['Restaurant Name'] = rest_name
-                article['Address'] = raw_address
-                article['Google Maps Address'] = google_maps_address
-                article['Restaurant Names and Links'] = rest_name + " (" + socials_website + ")"
-                # TODO: SWAP OUT THIS MAPS KEY WITH YOUR OWN GOOGLE MAPS API KEY: EASY TO GET, JUST GOOGLE IT
-                geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={google_maps_address}&key=YOUR_API_KEY_HERE"
-                response = requests.get(geocode_url).json()
+                    article['Restaurant Name'] = rest_name
+                    article['Address'] = raw_address
+                    article['Google Maps Address'] = google_maps_address
+                    article['Restaurant Names and Links'] = rest_name + " (" + socials_website + ")"
+                    # TODO: SWAP OUT THIS MAPS KEY WITH YOUR OWN GOOGLE MAPS API KEY: EASY TO GET, JUST GOOGLE IT
+                    geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={google_maps_address}&key=YOURKEYHERE"
+                    response = requests.get(geocode_url).json()
 
-                if response['status'] == 'OK':
-                    location = response['results'][0]['geometry']['location']
-                    lat, lng = location['lat'], location['lng']
+                    if response['status'] == 'OK':
+                        location = response['results'][0]['geometry']['location']
+                        lat, lng = location['lat'], location['lng']
 
-                    article['Latitude'] = lat
-                    article['Longitude'] = lng
+                        article['Latitude'] = lat
+                        article['Longitude'] = lng
 
-                    # Convert the Series article to a DataFrame and concatenate
-                    article_df = pd.DataFrame([article])
-                    list_to_add = pd.concat([list_to_add, article_df], ignore_index=True)
+                        # Convert the Series article to a DataFrame and concatenate
+                        article_df = pd.DataFrame([article])
+                        list_to_add = pd.concat([list_to_add, article_df], ignore_index=True)
+                    else:
+                        print(f"Failed to geocode address for restaurant in {link}. Response status: {response['status']}")
                 else:
-                    print(f"Failed to geocode address for restaurant in {link}. Response status: {response['status']}")
-            else:
-                print("Moving on: \n")
+                    print("Moving on: \n")
+
     return list_to_add
 
 
